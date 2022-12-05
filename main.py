@@ -10,14 +10,15 @@ from PIL import Image
 import os
 import base64
 
+with open("style.css" ) as css: #"app\style.css"
+    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 
 
 #set page icon,title and layout
 st.set_page_config(page_title="Di-Plast Sensor Selection ",layout="wide", page_icon = "favicon.png")
 
 
-with open("style.css" ) as css: #"app\style.css"
-    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
+
 
 # one could specify the burger menu
 #menu_items={"About":"Made by SKZ","Report a Bug":None,"Get help":None })

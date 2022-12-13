@@ -13,9 +13,6 @@ import base64
 #set page icon,title and layout
 st.set_page_config(page_title="Di-Plast Sensor Selection ",layout="wide", page_icon = "favicon.png")
 
-with open("style.css" ) as css: #"app\style.css"
-    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
-
 
 
 
